@@ -28,6 +28,20 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
         * it runs the new image through MobileNet, gets the resulting logits vector
         * uses the patterns it figured out from training to guess which class the image likely belongs to
 
+Discussion Question for Comprehension:
+
+> MobileNet (and ImageNet that it was based on) has over 170 categories for various dogs, but only 10 categories for fish. 
+> Does this mean that the Teachable Machine has less efficacy in learning the two fish as classes versus two dogs?
+>
+>Example: 
+>
+>Experiment A: you have images of two different dogs. In a fresh TM project, you train one dog as Class 1 and the other dog as Class 2. 
+>
+>Experiment B: you have images of two different fish. In a fresh TM project, you train one fish as Class 1 and the other fish as ass 2. 
+>
+>Will Experiment A perform at better at identifying its two classes? Why or why not?
+
+
 ## Vocabulary
 * Transfer Learning
     * Using a pre-trained model as a starting point to make a more specific model
@@ -40,5 +54,5 @@ Contact: Mark Sherman <shermanm@emmanuel.edu>
     * ALL WE NEED TO KNOW FOR NOW: the algorithm that gives each category a percentage likelihood, from 0-1. 
     * Softmax is the last step MobileNet does when producing an output.
 
-TODO: *k-nearest neightbors*
+TODO: *k-nearest neighbors*
 
